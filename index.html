@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度；不代表固定寬度的圖片會自動縮小。 -->
+    <meta name="description" content="走進台中東協廣場，探索異國美食、東南亞超市與多元文化聚落，透過清單、表格、照片和影片閱讀屬於大學生的假日散策指南。">
+    <!-- description 提供網頁摘要；author 標示作者。 -->
+    <meta name="author" content="HTML 課程示範作者">
+    <title>東協廣場特輯｜台中市區的小東南亞冒險</title>
+    <!-- title 顯示在瀏覽器分頁；與 body 中的 h1 用途不同。 -->
+</head>
+
+<body>
+    <!--
+        第四次作業：一頁式東協廣場專題報導。
+        本範例僅使用 HTML，保留瀏覽器預設呈現，不加入 CSS 或 JavaScript。
+        註解使用「小於符號、驚嘆號、兩個連字號」開始，並以兩個連字號及大於符號結束。
+        註解不會顯示於網頁，但讀者可從原始碼看見，因此不要放私人資料。
+        使用一致的四個空格縮排；成對標籤都明確寫出結束標籤。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>東協廣場：台中市區的小東南亞冒險</h1>
+        <p>不用出國也能秒飛東南亞，週末聚餐與異國選物的好去處。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：張漢羽｜報導整理日期：<time datetime="2026-10-07">2026 年 10 月 7 日</time></p>
+        <p><small>本文為大學生日常探索與資料整理型專題，非商業宣傳文案。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">廣場簡介</a></li>
+            <li><a href="#highlights">大學生推薦亮點與逛街攻略</a></li>
+            <li><a href="#table">樓層與特色比較表</a></li>
+            <li><a href="#photo">東協廣場街景照片</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <main>
+        <article aria-label="東協廣場專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、廣場簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，不用來取代標題。 -->
+                <p>
+                    位於台中火車站附近的<strong>東協廣場</strong>（舊稱第一廣場），
+                    近年來成為在地移工、新住民與年輕學生感受多元文化的重鎮。
+                    這裡聚集了各式東南亞超市、餐廳與通訊行，假日總是充滿熱鬧的異國氛圍。
+                </p>
+                <p>
+                    對大學生來說，這裡不僅是尋找道地越南河粉、泰國奶茶或印尼泡麵的寶庫，
+                    更是不用買機票就能體驗異國風情、週末和朋友聚餐拍照的好去處。
+                </p>
+                <p>
+                    從在地歷史的轉變到如今多元文化交織的商場，東協廣場就像一本活生生的社會學教科書。
+                    本篇整理了適合學生的逛街重點與口袋名單，帶大家一起探索這座市區裡的微型聯合國。
+                </p>
+                <!-- br 僅用於同段文字中需要的換行；不要用很多 br 製造間距。 -->
+                <p>廣場地址：台中市中區綠川西街 135 號。<br>閱讀重點：異國美食、東南亞超市與多元文化聚落。</p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、大學生推薦亮點與逛街攻略</h2>
+                <h3>不可錯過的三個特色</h3>
+                <!-- ul 是無序清單；li 是個別項目，適合不分先後的資訊。 -->
+                <ul>
+                    <li><strong>道地美食：</strong>從越南法國麵包、印尼炒麵到泰式料理應有盡有。</li>
+                    <li><strong>異國超市：</strong>販售各種特色零食、泡麵與香料，適合喜歡嘗鮮的人。</li>
+                    <li><strong>多元文化：</strong>假日滿街的異國語言與面孔，帶來濃厚的異國旅行感。</li>
+                </ul>
+
+                <h3>建議逛街攻略</h3>
+                <p>以下是本報導規劃的學生探索路線，適合週末半日遊。</p>
+                <!-- ol 是有序清單；瀏覽器會依 li 的排列產生編號。 -->
+                <ol>
+                    <li>抵達台中火車站後步行前往，順便欣賞周邊舊城區街景。</li>
+                    <li>直接搭電梯到各樓層尋找人氣東南亞超市，掃貨特色零食。</li>
+                    <li>找家道地的越南咖啡廳或小吃店坐下來享用午餐。</li>
+                    <li>餐後在周邊綠川或商場內散步拍照，記錄台中的多元面貌。</li>
+                </ol>
+            </section>
+
+            <section id="table">
+                <h2>三、樓層與特色比較表</h2>
+                <!--
+                    table 用於呈現資料，不用來排版整個網頁。
+                    本作業維持純 HTML，表格沒有額外的框線樣式。
+                    不使用已過時的 border、cellpadding、cellspacing 屬性。
+                -->
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>東協廣場三處熱門區域與觀察重點</caption>
+                    <!-- thead 包住表頭；tr 是一橫列；th 是標題儲存格。 -->
+                    <thead>
+                        <tr>
+                            <!-- scope="col" 表示這個 th 是整欄的標題。 -->
+                            <th scope="col">區域／店舖類型</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">大學生推薦玩法</th>
+                        </tr>
+                    </thead>
+                    <!-- tbody 包住資料列；td 是一般資料儲存格。 -->
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">異國美食街區</th>
+                            <td>集結越南、印尼、泰國等道地小吃</td>
+                            <td>品嚐平價又道地的異國料理與手搖飲</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">東南亞超市</th>
+                            <td>販售進口零食、泡麵、調味料與生鮮</td>
+                            <td>買稀奇的異國零食回宿舍跟室友分享</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">周邊商場與廣場</th>
+                            <td>假日移工朋友聚會與舉辦活動的熱點</td>
+                            <td>感受多元文化交融的獨特城市氛圍</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、東協廣場街景照片</h2>
+                <!-- figure 將圖片與圖說組成一個單位；figcaption 是圖說。 -->
+                <figure>
+                    <!--
+                        img 是空元素，不寫 /img 結束標籤。
+                        src 指定圖片網址；本範例使用外部圖片，需要連線才能載入。
+                        alt 描述照片內容，圖片未載入時或使用螢幕閱讀器時仍可理解。
+                        width 控制顯示寬度；未指定 height，瀏覽器依原圖比例顯示。
+                    -->
+                    <img
+                        src="https://travel.taichung.gov.tw/image/31543/1024x768"
+                        alt="台中東協廣場外觀與街景"
+                        width="480">
+                    <figcaption>
+                        東協廣場是台中體驗多元文化的指標地點。
+                        圖片來源：<a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/73">臺中觀光旅遊網</a>（示意圖）。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片更深入了解東協廣場的轉變與異國文化，再比較影片畫面與本文介紹的內容。</p>
+                <!--
+                    iframe 將 YouTube 播放器嵌入本頁，需要明確的結束標籤。
+                    src 使用 /embed/影片ID，不是一般的 /watch?v=影片ID 網址。
+                    width、height 設定播放器尺寸；title 說明嵌入內容。
+                    allow 開放所列功能；allowfullscreen 允許全螢幕播放。
+                    referrerpolicy 保留跨站來源資訊；仍須由瀏覽器提供有效來源。
+                    直接開本機檔案時，YouTube 可能因缺少 HTTP Referer 而出現錯誤 153。
+                    若發生此情況，請用本機 HTTP 伺服器預覽，或使用下方原始影片連結。
+                    播放也取決於網路、YouTube 及發布者的嵌入設定。
+                -->
+                <iframe
+                    width="560" height="315" src="https://www.youtube.com/embed/YysUiTO_WL8?si=_z7ehgb8PPLqjEA2" title
+                    ="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>>
+                </iframe>
+                <!-- a 提供一般影片連結；播放器無法播放時仍能前往 YouTube。 -->
+                <p>
+                    若播放器無法播放，請
+                    <a href="https://youtu.be/YysUiTO_WL8?si=_z7ehgb8PPLqjEA2" target="_blank" rel="noopener noreferrer">在 YouTube 觀看東協廣場介紹影片（另開分頁）</a>。
+                </p>
+                <p><small>影片為外部作者發布的採訪介紹，實際店鋪營業狀況請以現場為準。</small></p>
+            </section>
+
+            <section id="sources">
+                <h2>六、資料來源</h2>
+                <p>本報導依下列資料整理，逛街順序與大學生觀察建議由示範作者規劃。</p>
+                <!--
+                    target="_blank" 另開分頁；rel 保護開啟新頁面的關聯。
+                    網址中的 & 在 HTML 原始碼中寫成 &amp;。
+                -->
+                <ul>
+                    <li><a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/73" target="_blank" rel="noopener noreferrer">臺中觀光旅遊網：東協廣場介紹</a></li>
+                    <li><a href="https://www.verse.com.tw/article/taichung-tourism" target="_blank" rel="noopener noreferrer">verse雜誌</a></li>
+                    <li><a href="https://youtu.be/YysUiTO_WL8?si=JSOg5K93cLh6_oVY" target="_blank" rel="noopener noreferrer">YouTube：東協廣場走讀影片</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 7 日。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+    <!-- footer 是頁尾；來源與作者標示應依自己的作品修改。 -->
+    <footer>
+        <p>張漢羽｜東協廣場特輯</p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
